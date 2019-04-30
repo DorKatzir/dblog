@@ -49,6 +49,8 @@
     padding: 0;
 }
 
+
+
 body {
     font-family: 'Lato', sans-serif;
     @include interpolate(font-size, 320px, 1366px, 14px, 20px);
@@ -136,11 +138,35 @@ nav ul {
 /*///////////////// Main Content ///////////////////////////*/
 
 main {
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, .5);
+    background-image: url('../img/db_1920x1150.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
 
 }
 
-// main .content {}
+main .content {
+
+    margin-top: 3rem;
+    padding: 2rem;
+    max-width: 700px;
+
+    // background-color: rgba(255, 128, 0, .3);
+}
+
+h1 {
+    color: rgb(199, 203, 127);
+}
+
+p {
+    color: rgb(255, 232, 209);
+}
 
 /*////////// Create account/ signup /////////////////*/
 // input[type=password].pass {}
@@ -215,7 +241,7 @@ footer {
     background-color: #1E0D03;
     color: rgba(199, 203, 127, .3);
     padding: .8rem;
-
+    min-width: 100vw;
 
 }
 
@@ -224,32 +250,6 @@ footer h5 {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-/* Extra-small */
-@media screen and (max-width: 360px) {
-    .nav_logo {
-        // display: none;
-    }
-}
-
-/* Small */
-@media screen and (min-width: 361px) and (max-width: 480px) {
-    /* ... */
-}
-
-/* Medium-only */
-@media screen and (min-width: 481px) and (max-width: 960px) {
-    /* ... */
-}
-
-/* ... */
 
 
 

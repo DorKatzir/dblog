@@ -111,7 +111,34 @@ nav ul {
 
 /*///////////////// Main Content ///////////////////////////*/
 main {
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0.5);
+  background-image: url("../img/db_1920x1150.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content {
+  margin-top: 3rem;
+  padding: 2rem;
+  max-width: 700px;
+}
+
+h1 {
+  color: #c7cb7f;
+}
+
+p {
+  color: #ffe8d1;
 }
 
 /*////////// Create account/ signup /////////////////*/
@@ -125,6 +152,7 @@ footer {
   background-color: #1E0D03;
   color: rgba(199, 203, 127, 0.3);
   padding: .8rem;
+  min-width: 100vw;
 }
 
 footer h5 {
@@ -132,18 +160,6 @@ footer h5 {
   text-align: center;
 }
 
-/* Extra-small */
-/* Small */
-@media screen and (min-width: 361px) and (max-width: 480px) {
-  /* ... */
-}
-
-/* Medium-only */
-@media screen and (min-width: 481px) and (max-width: 960px) {
-  /* ... */
-}
-
-/* ... */
 /*///////////////// Colors ///////////////////////////*/
 /*
 

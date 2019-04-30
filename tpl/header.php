@@ -16,7 +16,7 @@
                 <li><a href="blog.php">Blog</a></li>
             </ul> 
                     
-            <div class="nav_logo"><a href="./"><img class="logo" src="img/logo4.png" alt="Logo"></a></div> 
+            <div class="nav_logo"><a href="./"><img class="logo" src="./img/db_logo.png" alt="Logo"></a></div> 
 
             <ul class="ul_user">
                 <?php if( ! isset($_SESSION['user_id']) ): ?>
