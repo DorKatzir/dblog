@@ -69,9 +69,44 @@ h5 {
   }
 }
 
-/*///////////////// Navigation ///////////////////////////*/
+/*///////////////// Header and Navigation ///////////////////////////*/
 header {
   background-color: #A8BA45;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border-bottom: 3px solid #FF8000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 1rem;
+}
+
+.ul_site,
+.ul_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ul_site li a,
+.ul_user li a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 .5rem;
+  color: #754C24;
+}
+
+.nav_logo {
+  z-index: 5;
 }
 
 /*///////////////// Main Content ///////////////////////////*/

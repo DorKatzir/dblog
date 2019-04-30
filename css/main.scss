@@ -78,12 +78,44 @@ h5 {
 
 
 
-/*///////////////// Navigation ///////////////////////////*/
+/*///////////////// Header and Navigation ///////////////////////////*/
 header {
     background-color: #A8BA45;
+
+
 }
 
-// nav {}
+nav {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 3px solid #FF8000;
+    // align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 1rem;
+}
+
+.ul_site,
+.ul_user {
+    display: flex;
+}
+
+.ul_site li a,
+.ul_user li a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 .5rem;
+    color: #754C24;
+}
+
+.nav_logo {
+    z-index: 5;
+}
+
+
 
 
 // nav ul li {}
@@ -201,7 +233,11 @@ footer h5 {
 
 
 /* Extra-small */
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {
+    .nav_logo {
+        // display: none;
+    }
+}
 
 /* Small */
 @media screen and (min-width: 361px) and (max-width: 480px) {

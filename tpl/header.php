@@ -10,11 +10,14 @@
     <header>
        
         <nav>
+            
             <ul class="ul_site">
                 <li><a href="about_us.php">About Us</a></li>
                 <li><a href="blog.php">Blog</a></li>
-            </ul>         
-            <div class="nav_logo"><a href="./"><img class="logo" src="img/logo4.png" alt="Logo"></a></div>        
+            </ul> 
+                    
+            <div class="nav_logo"><a href="./"><img class="logo" src="img/logo4.png" alt="Logo"></a></div> 
+
             <ul class="ul_user">
                 <?php if( ! isset($_SESSION['user_id']) ): ?>
                 <li><a href="signin.php">Sign In</a></li>
@@ -24,6 +27,8 @@
                 <li><a href="logout.php">Logout</a></li>
                 <?php endif; ?>
             </ul>
+
+
         </nav>
 
        
