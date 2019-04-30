@@ -102,7 +102,7 @@ nav {
     justify-content: center;
     // background-color: lightblue;
     width: 100%;
-    max-width: 700px;
+    max-width: 670px;
 }
 
 nav ul {
@@ -262,14 +262,15 @@ p {
 
 footer {
     background-color: #1E0D03;
-    color: rgba(199, 203, 127, .3);
+    color: rgba(199, 203, 127, .4);
     padding: .8rem;
     min-width: 100vw;
 
 }
 
 footer h5 {
-    font-weight: thin;
+    font-family: arial;
+    font-weight: 100;
     text-align: center;
 }
 
