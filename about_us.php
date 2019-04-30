@@ -1,7 +1,7 @@
 <?php
 require_once 'app/helpers.php';
 my_start_session('ddd_blog');
-$page_title = "About Us";
+$page_title = "About dBlog";
 
 ?>
 
@@ -12,7 +12,15 @@ $page_title = "About Us";
     <main>
         <div class="content">
             <h1><?= $page_title; ?></h1><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, rerum, facere, magni, nostrum consequatur officia accusamus corporis eos voluptate nesciunt veniam eius delectus at fuga quaerat illo distinctio libero harum.</p>
+            <p>Hello, my name is Dor Katzir, <br>
+            This Dynamic Blog Website Created as a Mid-project for a PHP full stack web development course.
+            Its is a highly secured Registration/Login System, craeted with these technologies: <br><br>
+            
+             - Vanila PHP<br>
+             - MySQL DB<br>
+             - jQuery JS<br>
+             - Responsive Html Css/Sass<br>
+            </p>                     
         </div>
     </main>
 <?php include 'tpl/footer.php';?>

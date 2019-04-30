@@ -12,7 +12,7 @@
         <nav>
             
             <ul class="ul_site">
-                <li><a href="about_us.php">About Us</a></li>
+                <li><a href="about_us.php">About dBlog</a></li>
                 <li><a href="blog.php">Blog</a></li>
             </ul> 
                     
