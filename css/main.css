@@ -5,6 +5,60 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: whitesmoke;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(0.57361vw + 12.16444px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Multiple properties with same values */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+@media screen and (min-width: 20rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    padding-top: calc(1vw - 0.2rem);
+    padding-bottom: calc(1vw - 0.2rem);
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 /*///////////////// Navigation ///////////////////////////*/
 /*///////////////// Main Content ///////////////////////////*/
 /*////////// Create account/ signup /////////////////*/

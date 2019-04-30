@@ -25,7 +25,8 @@
                 <?php endif; ?>
             </ul>
         </nav>
-        
+
+       
       <div class="succ">
       <?php if( isset($_GET['sm']) ): ?>
         <div class="sm-box">
@@ -33,5 +34,8 @@
         </div>
       <?php endif; ?>
      </div>
+
+
+
     </header>
     <br><br>
