@@ -1,0 +1,47 @@
+/*///////////////// GENERAL SETTINGS ///////////////////////////*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*///////////////// Navigation ///////////////////////////*/
+/*///////////////// Main Content ///////////////////////////*/
+/*////////// Create account/ signup /////////////////*/
+/*////////// create/ new post /////////////////*/
+/*////////// edit post /////////////////*/
+/*////////// signin form  /////////////////*/
+/*////////// blog posts /////////////////*/
+/*///////////////// FORM ///////////////////////////*/
+/*///////////////// Footer ///////////////////////////*/
+/* Extra-small */
+/* Small */
+@media screen and (min-width: 361px) and (max-width: 480px) {
+  /* ... */
+}
+
+/* Medium-only */
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  /* ... */
+}
+
+/* ... */
+/*///////////////// Colors ///////////////////////////*/
+/*
+
+#1E0D03 footer bg 
+#DAE97B
+#BEBB55
+#3A2417
+
+#332211,
+#54371F,
+#FF8000,
+#FFE8D1,
+#FF5252,
+#332211,
+#54371F,
+#FF8000
+
+
+*/

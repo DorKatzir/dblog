@@ -1,0 +1,166 @@
+/*///////////////// GENERAL SETTINGS ///////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {}
+
+
+
+
+
+
+/*///////////////// Navigation ///////////////////////////*/
+header {}
+
+nav {}
+
+
+nav ul li {}
+
+nav ul li a {}
+
+nav ul li a:hover,
+a:active {}
+
+
+.stages {}
+
+.infobox {}
+
+.infobox span {}
+
+
+/*///////////////// Main Content ///////////////////////////*/
+
+main {}
+
+main .content {}
+
+/*////////// Create account/ signup /////////////////*/
+input[type=password].pass {}
+
+div .acc {}
+
+
+
+
+
+/*////////// create/ new post /////////////////*/
+.box_new_post {}
+
+textarea.article_new_post {}
+
+input[type=text].title_new_post {}
+
+input[type=button].btn {}
+
+
+
+/*////////// edit post /////////////////*/
+
+textarea.edit_post {}
+
+
+
+
+
+
+/*////////// signin form  /////////////////*/
+div .box {}
+
+/*////////// blog posts /////////////////*/
+
+
+
+
+div .post_box {}
+
+div .post_txt h3 {}
+
+.details {}
+
+.left {}
+
+.right {}
+
+.right a {}
+
+.right a:hover {}
+
+
+/*///////////////// FORM ///////////////////////////*/
+input[type=text] {}
+
+input[type=password] {}
+
+input[type=submit] {}
+
+input[type=button] {}
+
+.error {}
+
+.sm-box {}
+
+
+
+/*///////////////// Footer ///////////////////////////*/
+
+footer {}
+
+footer h3 {}
+
+
+
+
+
+
+
+
+
+
+/* Extra-small */
+@media screen and (max-width: 360px) {}
+
+/* Small */
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    /* ... */
+}
+
+/* Medium-only */
+@media screen and (min-width: 481px) and (max-width: 960px) {
+    /* ... */
+}
+
+/* ... */
+
+
+
+
+
+
+
+
+/*///////////////// Colors ///////////////////////////*/
+/*
+
+#1E0D03 footer bg 
+#DAE97B
+#BEBB55
+#3A2417
+
+#332211,
+#54371F,
+#FF8000,
+#FFE8D1,
+#FF5252,
+#332211,
+#54371F,
+#FF8000
+
+
+*/
