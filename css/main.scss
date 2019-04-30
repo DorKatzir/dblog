@@ -45,6 +45,12 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul {
     margin: 0;
     padding: 0;
 }
@@ -60,10 +66,12 @@ body {
 
 .container {
     display: grid;
-    // grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+    justify-items: stretch;
     background-color: rgba(97, 97, 97, 0.651);
     min-height: 100vh;
+
 }
 
 
@@ -83,38 +91,55 @@ h5 {
 /*///////////////// Header and Navigation ///////////////////////////*/
 header {
     background-color: #A8BA45;
-
-
+    border-bottom: 3px solid #FF8000;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    height: 50px;
-    border-bottom: 3px solid #FF8000;
-    // align-items: center;
+    // background-color: lightblue;
+    width: 100%;
+    max-width: 700px;
 }
 
 nav ul {
     list-style: none;
-    margin: 1rem;
+    display: flex;
+    align-items: center;
+
 }
 
-.ul_site,
+
+.ul_site {
+
+    justify-content: flex-start;
+    width: 50%;
+    // background-color: pink;
+
+}
+
 .ul_user {
-    display: flex;
+
+    justify-content: flex-end;
+    width: 50%;
+    // background-color: yellow;
 }
 
 .ul_site li a,
 .ul_user li a {
     display: inline-block;
     text-decoration: none;
-    margin: 0 .5rem;
+    margin: 0 1rem;
     color: #754C24;
+    // background-color: green;
 }
 
 .nav_logo {
     z-index: 5;
+    margin: 0 1rem;
 }
 
 
@@ -144,10 +169,7 @@ main {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-
     align-items: center;
-
-
 
 }
 
@@ -155,6 +177,7 @@ main .content {
 
     margin-top: 3rem;
     padding: 2rem;
+    width: 100%;
     max-width: 700px;
 
     // background-color: rgba(255, 128, 0, .3);

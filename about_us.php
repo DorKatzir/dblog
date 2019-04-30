@@ -19,7 +19,7 @@ $page_title = "About dBlog";
              - Vanila PHP<br>
              - MySQL DB<br>
              - jQuery JS<br>
-             - Responsive Html Css/Sass<br>
+             - Html Css/Sass<br>
             </p>                     
         </div>
     </main>

@@ -50,11 +50,10 @@ p {
 
 /*///////////////// Navigation ///////////////////////////*/
 header {
-  width: 100%;
+  max-width: 100%;
   background-color: #A8BA45;
   height: 55px;
   top: 0px;
-  position: fixed;
   border-bottom: 3px solid #FF8000;
 }
 
