@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400');
+
+
+
 @mixin interpolate($properties, $min-screen, $max-screen, $min-value, $max-value) {
     & {
         @each $property in $properties {
@@ -36,22 +40,31 @@
 
 
 
-
 /*///////////////// GENERAL SETTINGS ///////////////////////////*/
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
 
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     @include interpolate(font-size, 320px, 1366px, 14px, 20px);
     background-color: whitesmoke;
-    height: 100vh;
-    overflow-x: hidden;
+
 }
+
+.container {
+    display: grid;
+    // grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    background-color: rgba(97, 97, 97, 0.651);
+    min-height: 100vh;
+}
+
+
 
 /* Multiple properties with same values */
 h1,
@@ -66,55 +79,60 @@ h5 {
 
 
 /*///////////////// Navigation ///////////////////////////*/
-header {}
+header {
+    background-color: #A8BA45;
+}
 
-nav {}
-
-
-nav ul li {}
-
-nav ul li a {}
-
-nav ul li a:hover,
-a:active {}
+// nav {}
 
 
-.stages {}
+// nav ul li {}
 
-.infobox {}
+// nav ul li a {}
 
-.infobox span {}
+// nav ul li a:hover,
+// a:active {}
+
+
+// .stages {}
+
+// .infobox {}
+
+// .infobox span {}
 
 
 /*///////////////// Main Content ///////////////////////////*/
 
-main {}
+main {
+    background-color: lightgray;
 
-main .content {}
+}
+
+// main .content {}
 
 /*////////// Create account/ signup /////////////////*/
-input[type=password].pass {}
+// input[type=password].pass {}
 
-div .acc {}
+// div .acc {}
 
 
 
 
 
 /*////////// create/ new post /////////////////*/
-.box_new_post {}
+// .box_new_post {}
 
-textarea.article_new_post {}
+// textarea.article_new_post {}
 
-input[type=text].title_new_post {}
+// input[type=text].title_new_post {}
 
-input[type=button].btn {}
+// input[type=button].btn {}
 
 
 
 /*////////// edit post /////////////////*/
 
-textarea.edit_post {}
+// textarea.edit_post {}
 
 
 
@@ -122,49 +140,57 @@ textarea.edit_post {}
 
 
 /*////////// signin form  /////////////////*/
-div .box {}
+// div .box {}
 
 /*////////// blog posts /////////////////*/
 
 
 
 
-div .post_box {}
+// div .post_box {}
 
-div .post_txt h3 {}
+// div .post_txt h3 {}
 
-.details {}
+// .details {}
 
-.left {}
+// .left {}
 
-.right {}
+// .right {}
 
-.right a {}
+// .right a {}
 
-.right a:hover {}
+// .right a:hover {}
 
 
 /*///////////////// FORM ///////////////////////////*/
-input[type=text] {}
+// input[type=text] {}
 
-input[type=password] {}
+// input[type=password] {}
 
-input[type=submit] {}
+// input[type=submit] {}
 
-input[type=button] {}
+// input[type=button] {}
 
-.error {}
+// .error {}
 
-.sm-box {}
+// .sm-box {}
 
 
 
 /*///////////////// Footer ///////////////////////////*/
 
-footer {}
+footer {
+    background-color: #1E0D03;
+    color: rgba(199, 203, 127, .3);
+    padding: .8rem;
 
-footer h3 {}
 
+}
+
+footer h5 {
+    font-weight: thin;
+    text-align: center;
+}
 
 
 

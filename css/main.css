@@ -1,14 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400");
 /*///////////////// GENERAL SETTINGS ///////////////////////////*/
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   background-color: whitesmoke;
-  height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +26,15 @@ body {
   body {
     font-size: 20px;
   }
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  background-color: rgba(97, 97, 97, 0.651);
+  min-height: 100vh;
 }
 
 /* Multiple properties with same values */
@@ -60,7 +70,15 @@ h5 {
 }
 
 /*///////////////// Navigation ///////////////////////////*/
+header {
+  background-color: #A8BA45;
+}
+
 /*///////////////// Main Content ///////////////////////////*/
+main {
+  background-color: lightgray;
+}
+
 /*////////// Create account/ signup /////////////////*/
 /*////////// create/ new post /////////////////*/
 /*////////// edit post /////////////////*/
@@ -68,6 +86,17 @@ h5 {
 /*////////// blog posts /////////////////*/
 /*///////////////// FORM ///////////////////////////*/
 /*///////////////// Footer ///////////////////////////*/
+footer {
+  background-color: #1E0D03;
+  color: rgba(199, 203, 127, 0.3);
+  padding: .8rem;
+}
+
+footer h5 {
+  font-weight: thin;
+  text-align: center;
+}
+
 /* Extra-small */
 /* Small */
 @media screen and (min-width: 361px) and (max-width: 480px) {
