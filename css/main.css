@@ -15,6 +15,11 @@ ul {
 body {
   font-family: 'Lato', sans-serif;
   background-color: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 body {
@@ -31,18 +36,6 @@ body {
   body {
     font-size: 20px;
   }
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto 1fr auto;
-      grid-template-rows: auto 1fr auto;
-  justify-items: stretch;
-  background-color: rgba(97, 97, 97, 0.651);
-  min-height: 100vh;
 }
 
 /* Multiple properties with same values */
@@ -140,7 +133,7 @@ nav ul {
 
 /*///////////////// Main Content ///////////////////////////*/
 main {
-  background-color: rgba(211, 211, 211, 0.5);
+  position: relative;
   background-image: url("../img/db_1920x1150.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -183,6 +176,10 @@ footer {
   color: rgba(199, 203, 127, 0.4);
   padding: .8rem;
   min-width: 100vw;
+  grid-row-end: -1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 footer h5 {
