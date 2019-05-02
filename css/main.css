@@ -14,12 +14,14 @@ ul {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: whitesmoke;
+  height: 100vh;
+  background: #54371F url("../img/big_bg.jpg") no-repeat center center/cover;
+  color: whitesmoke;
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
 }
 
 body {
@@ -138,13 +140,46 @@ a:active {
   transition: all 0.2s;
 }
 
+/*///////////////// Main Content ///////////////////////////*/
+main {
+  margin: 0 auto;
+}
+
+main .content {
+  margin-top: 4.2rem;
+  padding: 2rem;
+  background-color: rgba(255, 128, 0, 0.1);
+  border-radius: 5px;
+}
+
+main .content {
+  width: 300px;
+}
+
+@media screen and (min-width: 320px) {
+  main .content {
+    width: calc(38.24092vw + 177.62906px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  main .content {
+    width: 700px;
+  }
+}
+
+h1 {
+  color: #c7cb7f;
+}
+
+p {
+  color: #ffe8d1;
+}
+
 .stages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow-x: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -159,51 +194,29 @@ a:active {
   border-radius: 5px;
   text-align: center;
   padding: 1rem;
-  margin: 1rem;
+  margin: .5rem;
   color: #ffe8d1;
   cursor: pointer;
 }
 
 .infobox span {
-  display: block;
-  height: 35px;
-  color: #FF8000;
   font-weight: 700;
-  font-size: 1.2em;
+  display: block;
+  height: 2rem;
+  color: #FF8000;
   border-bottom: 2px solid #FF8000;
 }
 
-/*///////////////// Main Content ///////////////////////////*/
-main {
-  position: relative;
-  background-image: url("../img/db_1920x1150.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .content {
-  margin-top: 3rem;
-  padding: 2rem;
-  width: 100%;
-  max-width: 700px;
-}
-
-h1 {
-  color: #c7cb7f;
-}
-
-p {
-  color: #ffe8d1;
+@media only screen and (max-width: 651px) {
+  body {
+    background-attachment: fixed;
+  }
+  .stages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /*////////// Create account/ signup /////////////////*/

@@ -60,10 +60,13 @@ ul {
 body {
     font-family: 'Lato', sans-serif;
     @include interpolate(font-size, 320px, 1366px, 14px, 20px);
-    background-color: whitesmoke;
+    height: 100vh;
+    background: #54371F url('../img/big_bg.jpg') no-repeat center center / cover;
+    color: whitesmoke;
+    overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+
 }
 
 
@@ -142,51 +145,11 @@ a:active {
 }
 
 
-.stages {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    justify-content: center;
-    align-items: center;
-}
-
-.infobox {
-    width: 180px;
-    background-color: rgba(175, 150, 149, 0.5);
-    border-radius: 5px;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    color: #ffe8d1;
-    cursor: pointer;
-
-}
-
-.infobox span {
-    display: block;
-    height: 35px;
-    color: #FF8000;
-    font-weight: 700;
-    font-size: 1.2em;
-    border-bottom: 2px solid #FF8000;
-
-
-}
 
 /*///////////////// Main Content ///////////////////////////*/
 
 main {
-    // background-color: rgba(211, 211, 211, .5);
-    position: relative;
-    background-image: url('../img/db_1920x1150.jpg');
-
-    background-position: top center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
+    margin: 0 auto;
 }
 
 // main::after {
@@ -197,14 +160,13 @@ main {
 // }
 
 main .content {
-
-    margin-top: 3rem;
+    margin-top: 4.2rem;
     padding: 2rem;
-    width: 100%;
-    max-width: 700px;
-
-    // background-color: rgba(255, 128, 0, .3);
+    background-color: rgba(255, 128, 0, .1);
+    border-radius: 5px;
+    @include interpolate(width, 320px, 1366px, 300px, 700px);
 }
+
 
 h1 {
     color: rgb(199, 203, 127);
@@ -213,6 +175,50 @@ h1 {
 p {
     color: rgb(255, 232, 209);
 }
+
+
+///////////////////// Home page //////////////////////
+
+.stages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #fff;
+}
+
+.infobox {
+    width: 180px;
+    background-color: rgba(175, 150, 149, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem;
+    color: #ffe8d1;
+    cursor: pointer;
+
+}
+
+.infobox span {
+    font-weight: 700;
+    display: block;
+    height: 2rem;
+    color: #FF8000;
+    border-bottom: 2px solid #FF8000;
+
+}
+
+
+@media only screen and (max-width: 651px) {
+    body {
+
+        background-attachment: fixed;
+    }
+
+    .stages {
+        flex-direction: column;
+    }
+}
+
 
 /*////////// Create account/ signup /////////////////*/
 // input[type=password].pass {}
