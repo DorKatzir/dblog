@@ -105,6 +105,11 @@ nav ul {
 
 }
 
+.nav_logo {
+    z-index: 5;
+    margin: 0 1rem;
+}
+
 
 .ul_site {
 
@@ -130,20 +135,17 @@ nav ul {
     // background-color: green;
 }
 
-.nav_logo {
-    z-index: 5;
-    margin: 0 1rem;
+nav ul li a:hover,
+a:active {
+    /*background-color: rgba(51,34,17, 0.1);*/
+    color: #ffe8d1;
+    transition: all 0.2s;
+
 }
 
 
 
 
-// nav ul li {}
-
-// nav ul li a {}
-
-// nav ul li a:hover,
-// a:active {}
 
 
 // .stages {}

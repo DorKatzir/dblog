@@ -104,6 +104,11 @@ nav ul {
           align-items: center;
 }
 
+.nav_logo {
+  z-index: 5;
+  margin: 0 1rem;
+}
+
 .ul_site {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -126,9 +131,12 @@ nav ul {
   color: #754C24;
 }
 
-.nav_logo {
-  z-index: 5;
-  margin: 0 1rem;
+nav ul li a:hover,
+a:active {
+  /*background-color: rgba(51,34,17, 0.1);*/
+  color: #ffe8d1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 /*///////////////// Main Content ///////////////////////////*/
