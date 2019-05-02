@@ -137,23 +137,41 @@ nav ul {
 
 nav ul li a:hover,
 a:active {
-    /*background-color: rgba(51,34,17, 0.1);*/
     color: #ffe8d1;
     transition: all 0.2s;
-
 }
 
 
+.stages {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.infobox {
+    width: 180px;
+    background-color: rgba(175, 150, 149, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: #ffe8d1;
+    cursor: pointer;
+
+}
+
+.infobox span {
+    display: block;
+    height: 35px;
+    color: #FF8000;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-bottom: 2px solid #FF8000;
 
 
-
-
-// .stages {}
-
-// .infobox {}
-
-// .infobox span {}
-
+}
 
 /*///////////////// Main Content ///////////////////////////*/
 
