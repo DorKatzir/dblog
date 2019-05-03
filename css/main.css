@@ -108,7 +108,39 @@ nav ul {
 
 .nav_logo {
   z-index: 5;
-  margin: 0 1rem;
+  margin-top: 0 !important;
+}
+
+.nav_logo {
+  margin: 5px;
+}
+
+@media screen and (min-width: 320px) {
+  .nav_logo {
+    margin: calc(1.05163vw + 1.6348px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .nav_logo {
+    margin: 16px;
+  }
+}
+
+.nav_logo img {
+  width: 51px;
+}
+
+@media screen and (min-width: 320px) {
+  .nav_logo img {
+    width: calc(1.91205vw + 44.88145px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .nav_logo img {
+    width: 71px;
+  }
 }
 
 .ul_site {
@@ -150,6 +182,8 @@ main .content {
   padding: 2rem;
   background-color: rgba(255, 128, 0, 0.1);
   border-radius: 5px;
+  -webkit-box-shadow: 1px 5px 5px rgba(30, 13, 3, 0.5);
+          box-shadow: 1px 5px 5px rgba(30, 13, 3, 0.5);
 }
 
 main .content {

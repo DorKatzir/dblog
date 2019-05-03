@@ -110,7 +110,14 @@ nav ul {
 
 .nav_logo {
     z-index: 5;
-    margin: 0 1rem;
+
+    @include interpolate(margin, 320px, 1366px, 5px, 16px);
+    margin-top: 0 !important;
+}
+
+.nav_logo img {
+
+    @include interpolate(width, 320px, 1366px, 51px, 71px);
 }
 
 
@@ -150,6 +157,7 @@ a:active {
 
 main {
     margin: 0 auto;
+
 }
 
 // main::after {
@@ -160,11 +168,14 @@ main {
 // }
 
 main .content {
+    @include interpolate(width, 320px, 1366px, 300px, 700px);
     margin-top: 4.2rem;
     padding: 2rem;
     background-color: rgba(255, 128, 0, .1);
     border-radius: 5px;
-    @include interpolate(width, 320px, 1366px, 300px, 700px);
+    // border: 1px solid rgba(30, 13, 3, .1);
+    box-shadow: 1px 5px 5px rgba(30, 13, 3, .5);
+
 }
 
 
