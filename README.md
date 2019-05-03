@@ -1,2 +1,2 @@
 # dBlog (PHP mid-Project)
-Highly Secured Basic Blog with Signup &amp; Signin System -  Vanila PHP mySQL  jQuery
+Highly Secured Basic Blog with Registrasion &amp; Signin System -  Vanila PHP mySQL  jQuery
