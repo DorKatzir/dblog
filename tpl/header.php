@@ -31,7 +31,9 @@
             <div class="succ">
                 <?php if( isset($_GET['sm']) ): ?>
                     <div class="sm-box">
-                    <p><?= $_GET['sm']; ?></p>
+                        <div class="sm-text">
+                            <p><?= $_GET['sm']; ?></p>
+                        </div>
                     </div>
                 <?php endif; ?>
              </div>
