@@ -280,6 +280,19 @@ section {
   cursor: pointer;
 }
 
+div.infobox a {
+  text-decoration: none;
+}
+
+div.infobox a:hover {
+  color: #FF8000;
+}
+
+div.infobox a:active,
+a:visited {
+  color: #ffe8d1;
+}
+
 .infobox span {
   font-weight: 700;
   display: block;
@@ -289,9 +302,6 @@ section {
 }
 
 @media only screen and (max-width: 651px) {
-  body {
-    background-attachment: fixed;
-  }
   .stages {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

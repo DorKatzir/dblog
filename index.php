@@ -11,9 +11,9 @@ $page_title = "Home";
             <h1>Wellcome to dBlog</h1><br>
            
             <div class="stages">
-                <div class="infobox" onclick="info1()"><span>1</span><br> Create <br> Account</div>
-                <div class="infobox" onclick="info2()"><span>2</span><br> Sign In <br> Account</div>
-                <div class="infobox" onclick="info3()"><span>3</span><br> Start <br> Blogging!</div>
+                <div class="infobox"><span>1</span><br><a href="signup.php"> Create <br> Account</a></div>
+                <div class="infobox"><span>2</span><br><a href="signin.php"> Sign In <br> Account</a></div>
+                <div class="infobox"><span>3</span><br><a href="blog.php"> Start <br> Blogging!</a></div>
             </div>
        
 
