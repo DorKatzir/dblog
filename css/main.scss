@@ -105,12 +105,10 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-
 }
 
 .nav_logo {
     z-index: 5;
-
     @include interpolate(margin, 320px, 1366px, 5px, 16px);
     margin-top: 0 !important;
 }
@@ -160,32 +158,35 @@ main {
 
 }
 
-// main::after {
-//     content: '';
-//     position: absolute;
-//     background: url('../img/db_1920x1150.jpg');
-//     object-fit: cover;
-// }
 
 main .content {
-    @include interpolate(width, 320px, 1366px, 300px, 700px);
-    margin-top: 4.2rem;
-    padding: 2rem;
-    background-color: rgba(255, 128, 0, .1);
-    border-radius: 5px;
-    // border: 1px solid rgba(30, 13, 3, .1);
-    box-shadow: 1px 5px 5px rgba(30, 13, 3, .5);
+    @include interpolate(width, 320px, 1366px, 300px, 900px);
+    @include interpolate((margin-top, margin-bottom), 20rem, 70rem, 1.5rem, 3rem);
+
+    // margin-top: 3rem;
+    // padding-bottom: 2rem;
 
 }
 
+main .content h1 {
+
+    text-align: center;
+}
 
 h1 {
     color: rgb(199, 203, 127);
+
 }
 
 p {
     color: rgb(255, 232, 209);
 }
+
+section {
+    @include interpolate(width, 320px, 1366px, 220px, 650px);
+    margin: 0 auto;
+}
+
 
 
 ///////////////////// Home page //////////////////////
@@ -232,28 +233,70 @@ p {
 
 
 /*////////// Create account/ signup /////////////////*/
-// input[type=password].pass {}
 
-// div .acc {}
+input[type=password].pass {
+    margin-top: 5px;
+    width: 140px;
+    height: 25px;
+    border-style: none;
+    font-size: 1em;
+}
 
+div .acc,
+div .box {
+    @include interpolate(width, 320px, 1366px, 250px, 350px);
+    background-color: rgba(175, 150, 149, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+}
 
 
 
 
 /*////////// create/ new post /////////////////*/
-// .box_new_post {}
+.box_new_post {
+    @include interpolate(width, 320px, 1366px, 250px, 600px);
 
-// textarea.article_new_post {}
+    background-color: rgba(175, 150, 149, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
 
-// input[type=text].title_new_post {}
+textarea.article_new_post,
+textarea.edit_post {
+    @include interpolate(width, 320px, 1366px, 220px, 400px);
+    @include interpolate(font-size, 320px, 1366px, 14px, 20px);
+    height: 250px;
 
-// input[type=button].btn {}
+}
+
+input[type=text].title_new_post {
+    margin-top: 5px;
+    height: 25px;
+    border-style: none;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+input[type=button].btn {
+    margin-top: 5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #9cb10a;
+    border: 1px solid white;
+    color: white;
+    text-shadow: .5px .5px gray;
+    cursor: pointer;
+}
 
 
 
 /*////////// edit post /////////////////*/
 
-// textarea.edit_post {}
 
 
 
@@ -261,40 +304,134 @@ p {
 
 
 /*////////// signin form  /////////////////*/
-// div .box {}
+// div .box {
+//     width: 350px;
+//     background-color: rgba(175, 150, 149, 0.5);
+//     border-radius: 5px;
+//     padding: 20px;
+// }
 
 /*////////// blog posts /////////////////*/
 
 
+div .post_box {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: rgba(51, 34, 17, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ffe8d1;
+}
 
+div .post_txt h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
 
-// div .post_box {}
+.details {
+    border-top: 1px solid rgba(255, 128, 0, 0.5);
+    height: 35px;
+    width: 100%;
+    top: 20px;
+    position: absolute;
+    position: relative;
+    color: #a39486;
+    font-weight: 400;
+}
 
-// div .post_txt h3 {}
+.left {
+    height: 20px;
+    font-size: 0.8em;
+    float: left;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
 
-// .details {}
+.right {
+    height: 20px;
+    font-size: 0.8em;
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
 
-// .left {}
+.right a {
+    color: #FF8000;
+    text-decoration: none;
+}
 
-// .right {}
-
-// .right a {}
-
-// .right a:hover {}
+.right a:hover {
+    color: #9cb10a;
+    text-decoration: underline;
+}
 
 
 /*///////////////// FORM ///////////////////////////*/
-// input[type=text] {}
+input[type=text] {
+    margin-top: 5px;
+    height: 25px;
+    border-style: none;
+    font-size: 1em;
+}
 
-// input[type=password] {}
+input[type=password] {
+    margin-top: 5px;
+    height: 25px;
+    border-style: none;
+    font-size: 1em;
+}
 
-// input[type=submit] {}
+input[type=submit] {
+    margin-top: 5px;
+    @include interpolate(width, 320px, 1366px, 200px, 300px);
+    @include interpolate(height, 320px, 1366px, 40px, 50px);
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #9cb10a;
+    border: 1px solid white;
+    color: white;
+    text-shadow: .5px .5px gray;
+    cursor: pointer;
+}
 
-// input[type=button] {}
+input[type=button] {
+    margin-top: 5px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #9cb10a;
+    border: 1px solid white;
+    color: white;
+    text-shadow: .5px .5px gray;
+    cursor: pointer;
+}
 
-// .error {}
+.error {
+    background-color: red;
+    color: white;
+    font-size: 0.6em;
+}
 
-// .sm-box {}
+
+.sm-box {
+    position: absolute;
+    background-color: rgba(156, 177, 10, .9);
+    /*dim the background*/
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 200px;
+
+}
 
 
 

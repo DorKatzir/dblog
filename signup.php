@@ -9,7 +9,7 @@ if( isset($_SESSION['user_id']) ){
 }
 
 
-$page_title = "Create account";
+$page_title = "Create your account";
 $error['name'] = $error['email'] = $error['password'] = '';
 
 
@@ -86,8 +86,7 @@ $token = csrf_token();
         <div class="content">
             <h1><?= $page_title; ?></h1><br>
             <div class="acc">
-            <p>Enter your details:</p><br>
-            
+             
             <form method="post" action="">
                 
                 <input type="hidden" name="token" value="<?= $token; ?>">
@@ -105,7 +104,7 @@ $token = csrf_token();
                 <lable for="password">Password:</lable><br>
                 <input type="password" name="password" id="password" class="pass"/>
                 <br>
-                <lable for="confirm-password">Confirm password:</lable>
+                <lable for="confirm-password">Confirm password:</lable><br>
                 <input type="password" name="confirm_password" id="confirm-password" class="pass"/><br>
                 <span class="error"><?= $error['password']; ?></span>
                 <br>

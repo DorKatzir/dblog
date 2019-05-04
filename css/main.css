@@ -178,28 +178,42 @@ main {
 }
 
 main .content {
-  margin-top: 4.2rem;
-  padding: 2rem;
-  background-color: rgba(255, 128, 0, 0.1);
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 5px 5px rgba(30, 13, 3, 0.5);
-          box-shadow: 1px 5px 5px rgba(30, 13, 3, 0.5);
-}
-
-main .content {
   width: 300px;
 }
 
 @media screen and (min-width: 320px) {
   main .content {
-    width: calc(38.24092vw + 177.62906px);
+    width: calc(57.36138vw + 116.44359px);
   }
 }
 
 @media screen and (min-width: 1366px) {
   main .content {
-    width: 700px;
+    width: 900px;
   }
+}
+
+main .content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 20rem) {
+  main .content {
+    margin-top: calc(3vw + 0.9rem);
+    margin-bottom: calc(3vw + 0.9rem);
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  main .content {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+main .content h1 {
+  text-align: center;
 }
 
 h1 {
@@ -208,6 +222,26 @@ h1 {
 
 p {
   color: #ffe8d1;
+}
+
+section {
+  margin: 0 auto;
+}
+
+section {
+  width: 220px;
+}
+
+@media screen and (min-width: 320px) {
+  section {
+    width: calc(41.10899vw + 88.45124px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  section {
+    width: 650px;
+  }
 }
 
 .stages {
@@ -254,11 +288,283 @@ p {
 }
 
 /*////////// Create account/ signup /////////////////*/
+input[type=password].pass {
+  margin-top: 5px;
+  width: 140px;
+  height: 25px;
+  border-style: none;
+  font-size: 1em;
+}
+
+div .acc,
+div .box {
+  background-color: rgba(175, 150, 149, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+div .acc,
+div .box {
+  width: 250px;
+}
+
+@media screen and (min-width: 320px) {
+  div .acc,
+  div .box {
+    width: calc(9.56023vw + 219.40727px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  div .acc,
+  div .box {
+    width: 350px;
+  }
+}
+
 /*////////// create/ new post /////////////////*/
+.box_new_post {
+  background-color: rgba(175, 150, 149, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.box_new_post {
+  width: 250px;
+}
+
+@media screen and (min-width: 320px) {
+  .box_new_post {
+    width: calc(33.4608vw + 142.92543px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .box_new_post {
+    width: 600px;
+  }
+}
+
+textarea.article_new_post,
+textarea.edit_post {
+  height: 250px;
+}
+
+textarea.article_new_post,
+textarea.edit_post {
+  width: 220px;
+}
+
+@media screen and (min-width: 320px) {
+  textarea.article_new_post,
+  textarea.edit_post {
+    width: calc(17.20841vw + 164.93308px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  textarea.article_new_post,
+  textarea.edit_post {
+    width: 400px;
+  }
+}
+
+textarea.article_new_post,
+textarea.edit_post {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  textarea.article_new_post,
+  textarea.edit_post {
+    font-size: calc(0.57361vw + 12.16444px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  textarea.article_new_post,
+  textarea.edit_post {
+    font-size: 20px;
+  }
+}
+
+input[type=text].title_new_post {
+  margin-top: 5px;
+  height: 25px;
+  border-style: none;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+input[type=button].btn {
+  margin-top: 5px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #9cb10a;
+  border: 1px solid white;
+  color: white;
+  text-shadow: .5px .5px gray;
+  cursor: pointer;
+}
+
 /*////////// edit post /////////////////*/
 /*////////// signin form  /////////////////*/
 /*////////// blog posts /////////////////*/
+div .post_box {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: rgba(51, 34, 17, 0.8);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #ffe8d1;
+}
+
+div .post_txt h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.details {
+  border-top: 1px solid rgba(255, 128, 0, 0.5);
+  height: 35px;
+  width: 100%;
+  top: 20px;
+  position: absolute;
+  position: relative;
+  color: #a39486;
+  font-weight: 400;
+}
+
+.left {
+  height: 20px;
+  font-size: 0.8em;
+  float: left;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+.right {
+  height: 20px;
+  font-size: 0.8em;
+  float: right;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+.right a {
+  color: #FF8000;
+  text-decoration: none;
+}
+
+.right a:hover {
+  color: #9cb10a;
+  text-decoration: underline;
+}
+
 /*///////////////// FORM ///////////////////////////*/
+input[type=text] {
+  margin-top: 5px;
+  height: 25px;
+  border-style: none;
+  font-size: 1em;
+}
+
+input[type=password] {
+  margin-top: 5px;
+  height: 25px;
+  border-style: none;
+  font-size: 1em;
+}
+
+input[type=submit] {
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #9cb10a;
+  border: 1px solid white;
+  color: white;
+  text-shadow: .5px .5px gray;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  width: 200px;
+}
+
+@media screen and (min-width: 320px) {
+  input[type=submit] {
+    width: calc(9.56023vw + 169.40727px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  input[type=submit] {
+    width: 300px;
+  }
+}
+
+input[type=submit] {
+  height: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  input[type=submit] {
+    height: calc(0.95602vw + 36.94073px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  input[type=submit] {
+    height: 50px;
+  }
+}
+
+input[type=button] {
+  margin-top: 5px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #9cb10a;
+  border: 1px solid white;
+  color: white;
+  text-shadow: .5px .5px gray;
+  cursor: pointer;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  font-size: 0.6em;
+}
+
+.sm-box {
+  position: absolute;
+  background-color: rgba(156, 177, 10, 0.9);
+  /*dim the background*/
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 200px;
+}
+
 /*///////////////// Footer ///////////////////////////*/
 footer {
   background-color: #1E0D03;

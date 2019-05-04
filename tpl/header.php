@@ -28,19 +28,19 @@
                 <?php endif; ?>
             </ul>
 
+            <div class="succ">
+                <?php if( isset($_GET['sm']) ): ?>
+                    <div class="sm-box">
+                    <p><?= $_GET['sm']; ?></p>
+                    </div>
+                <?php endif; ?>
+             </div>
+
 
         </nav>
 
-       
-      <div class="succ">
-      <?php if( isset($_GET['sm']) ): ?>
-        <div class="sm-box">
-          <p><?= $_GET['sm']; ?></p>
-        </div>
-      <?php endif; ?>
-     </div>
-
-
+   
 
     </header>
 
+   

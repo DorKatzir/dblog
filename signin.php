@@ -9,7 +9,7 @@ if( isset($_SESSION['user_id']) ){
 }
 
 
-$page_title = "Sign In";
+$page_title = "Sign In your account";
 $error = '';
 
 
@@ -76,8 +76,9 @@ $token = csrf_token();
     <main>
         <div class="content">
             <h1><?= $page_title; ?></h1><br>
+            
             <div class="box">
-            <p>Connect with your Account:</p><br>
+            <br>
             
             <form method="post" action="">
                 

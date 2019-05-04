@@ -1,5 +1,4 @@
-$('div.sm-box').delay(3000).slideUp();
-
+$('div.sm-box').delay(1500).slideUp();
 
 
 function info1() {

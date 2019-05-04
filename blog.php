@@ -46,7 +46,7 @@ $posts = [];
               <p><?= htmlentities($post['article']); ?></p>
                </div>
                 <div class="details"> 
-                    <span class="left">written by: <?= htmlentities($post['name']).$spacer; ?> on: <?= $post['date']; ?></span>
+                    <span class="left">written by: <?= htmlentities($post['name']).$spacer; ?> on: <?= date('d M Y',strtotime($post['date'])); ?></span>
                 <?php if( $uid == $post['user_id'] ): ?>
                 <span class="right">
                     <a href="update_post.php?pid=<?= $post['id']; ?>">Edit</a> | 
@@ -55,9 +55,10 @@ $posts = [];
                 <?php endif; ?>
                 </div>
             </div>
+            
             <?php endforeach; ?>
             <?php endif; ?>
-
+<br><br>
         </div>
     </main>
 <?php include 'tpl/footer.php';?>
