@@ -59,17 +59,23 @@ ul {
 
 body {
     font-family: 'Lato', sans-serif;
-    @include interpolate(font-size, 320px, 1366px, 14px, 20px);
+    @include interpolate(font-size, 320px, 1366px, 16px, 20px);
     height: 100vh;
-    background: #54371F url('../img/big_bg.jpg') no-repeat center center / cover;
     color: whitesmoke;
-    overflow: hidden;
+    overflow-x: hidden;
     display: grid;
     grid-template-rows: auto 1fr auto;
 
 }
 
-
+.multi-bg {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/camelion_bg.png'), url('../img/pattern_bg.jpg');
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center, top left;
+    background-attachment: fixed, fixed;
+}
 
 
 /* Multiple properties with same values */
@@ -86,11 +92,17 @@ h5 {
 
 /*///////////////// Header and Navigation ///////////////////////////*/
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
     background-color: #A8BA45;
     border-bottom: 3px solid #FF8000;
     height: 50px;
     display: flex;
     justify-content: center;
+    z-index: 3;
+
 }
 
 nav {
@@ -154,7 +166,8 @@ a:active {
 /*///////////////// Main Content ///////////////////////////*/
 
 main {
-    margin: 0 auto;
+    margin: 4rem auto;
+
 
 }
 

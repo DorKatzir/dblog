@@ -15,9 +15,8 @@ ul {
 body {
   font-family: 'Lato', sans-serif;
   height: 100vh;
-  background: #54371F url("../img/big_bg.jpg") no-repeat center center/cover;
   color: whitesmoke;
-  overflow: hidden;
+  overflow-x: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 1fr auto;
@@ -25,12 +24,12 @@ body {
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
   body {
-    font-size: calc(0.57361vw + 12.16444px);
+    font-size: calc(0.38241vw + 14.77629px);
   }
 }
 
@@ -38,6 +37,15 @@ body {
   body {
     font-size: 20px;
   }
+}
+
+.multi-bg {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/camelion_bg.png"), url("../img/pattern_bg.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: bottom center, top left;
+  background-attachment: fixed, fixed;
 }
 
 /* Multiple properties with same values */
@@ -74,6 +82,10 @@ h5 {
 
 /*///////////////// Header and Navigation ///////////////////////////*/
 header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
   background-color: #A8BA45;
   border-bottom: 3px solid #FF8000;
   height: 50px;
@@ -83,6 +95,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 3;
 }
 
 nav {
@@ -174,7 +187,7 @@ a:active {
 
 /*///////////////// Main Content ///////////////////////////*/
 main {
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 
 main .content {
