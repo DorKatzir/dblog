@@ -1,9 +1,18 @@
 <?php
 
+
+### Local Development
 define('MYSQL_HOST', 'localhost');
 define('MYSQL_USER', 'root');
 define('MYSQL_PWD', '');
 define('MYSQL_DB', 'dblog');
+
+
+### Online Production 
+#// define('MYSQL_HOST', 'localhost');
+#// define('MYSQL_USER', 'dblog');
+#// define('MYSQL_PWD', 'dblogdblog');
+#// define('MYSQL_DB', 'dblog');
 
 
 
