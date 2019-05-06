@@ -45,7 +45,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 13, 3, 0.7)), to(rgba(30, 13, 3, 0))), url("../img/camelion_bg.png"), url("../img/pattern_bg.jpg");
   background-image: linear-gradient(rgba(30, 13, 3, 0.7), rgba(30, 13, 3, 0)), url("../img/camelion_bg.png"), url("../img/pattern_bg.jpg");
   background-repeat: no-repeat, no-repeat, repeat;
-  background-position: top center, bottom -150px center;
+  background-position: top 50px center, bottom -150px center;
   background-attachment: fixed;
 }
 
@@ -87,8 +87,8 @@ header {
   left: 0;
   top: 0;
   width: 100vw;
-  background-color: #A8BA45;
-  border-bottom: 3px solid #FF8000;
+  background-color: #a8ba45;
+  border-bottom: 3px solid #ff8000;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,7 +593,6 @@ input[type=button] {
 
 /*///////////////// Footer ///////////////////////////*/
 footer {
-  background-color: rgba(30, 13, 3, 0.3);
   color: rgba(199, 203, 127, 0.8);
   padding: .8rem;
   min-width: 100vw;
@@ -623,6 +622,17 @@ footer h5 {
   font-family: arial;
   font-weight: 100;
   text-align: center;
+}
+
+footer h5 a,
+a:active,
+a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+footer h5 a:hover {
+  text-decoration: underline;
 }
 
 /*///////////////// Colors ///////////////////////////*/

@@ -77,7 +77,7 @@ body {
         url('../img/pattern_bg.jpg');
     background-repeat: no-repeat, no-repeat, repeat;
 
-    background-position: top center, bottom -150px center;
+    background-position: top 50px center, bottom -150px center;
     background-attachment: fixed;
 }
 
@@ -100,8 +100,9 @@ header {
     left: 0;
     top: 0;
     width: 100vw;
-    background-color: #A8BA45;
-    border-bottom: 3px solid #FF8000;
+    background-color: rgba(168, 186, 69, 1);
+    // background-color: rgba(30, 13, 3, 1);
+    border-bottom: 3px solid rgba(255, 128, 0, 1);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -472,7 +473,7 @@ input[type=button] {
 
 footer {
     @include interpolate(font-size, 320px, 1366px, 12px, 16px);
-    background-color: rgba(30, 13, 3, .3);
+    // background-color: rgba(30, 13, 3, .3);
     color: rgba(199, 203, 127, .8);
     padding: .8rem;
     min-width: 100vw;
@@ -486,6 +487,17 @@ footer h5 {
     font-family: arial;
     font-weight: 100;
     text-align: center;
+}
+
+footer h5 a,
+a:active,
+a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer h5 a:hover {
+    text-decoration: underline;
 }
 
 
