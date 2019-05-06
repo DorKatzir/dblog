@@ -71,10 +71,14 @@ body {
 .multi-bg {
     height: 100%;
     width: 100%;
-    background-image: url('../img/camelion_bg.png'), url('../img/pattern_bg.jpg');
-    background-repeat: no-repeat, repeat;
-    background-position: bottom center, top left;
-    background-attachment: fixed, fixed;
+    background-image: linear-gradient(rgba(30, 13, 3, .7),
+            rgba(30, 13, 3, 0)),
+        url('../img/camelion_bg.png'),
+        url('../img/pattern_bg.jpg');
+    background-repeat: no-repeat, no-repeat, repeat;
+
+    background-position: top center, bottom -150px center;
+    background-attachment: fixed;
 }
 
 
@@ -467,8 +471,9 @@ input[type=button] {
 /*///////////////// Footer ///////////////////////////*/
 
 footer {
-    background-color: #1E0D03;
-    color: rgba(199, 203, 127, .4);
+    @include interpolate(font-size, 320px, 1366px, 12px, 16px);
+    background-color: rgba(30, 13, 3, .3);
+    color: rgba(199, 203, 127, .8);
     padding: .8rem;
     min-width: 100vw;
     grid-row-end: -1;

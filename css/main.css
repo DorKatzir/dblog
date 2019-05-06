@@ -42,10 +42,11 @@ body {
 .multi-bg {
   height: 100%;
   width: 100%;
-  background-image: url("../img/camelion_bg.png"), url("../img/pattern_bg.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: bottom center, top left;
-  background-attachment: fixed, fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 13, 3, 0.7)), to(rgba(30, 13, 3, 0))), url("../img/camelion_bg.png"), url("../img/pattern_bg.jpg");
+  background-image: linear-gradient(rgba(30, 13, 3, 0.7), rgba(30, 13, 3, 0)), url("../img/camelion_bg.png"), url("../img/pattern_bg.jpg");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: top center, bottom -150px center;
+  background-attachment: fixed;
 }
 
 /* Multiple properties with same values */
@@ -592,14 +593,30 @@ input[type=button] {
 
 /*///////////////// Footer ///////////////////////////*/
 footer {
-  background-color: #1E0D03;
-  color: rgba(199, 203, 127, 0.4);
+  background-color: rgba(30, 13, 3, 0.3);
+  color: rgba(199, 203, 127, 0.8);
   padding: .8rem;
   min-width: 100vw;
   grid-row-end: -1;
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+footer {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  footer {
+    font-size: calc(0.38241vw + 10.77629px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  footer {
+    font-size: 16px;
+  }
 }
 
 footer h5 {

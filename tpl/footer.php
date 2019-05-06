@@ -5,7 +5,7 @@
                 </span>
 
                <span>
-                Special thanks to my mentor: Shlomi Lahav -
+                Special thanks to: Shlomi Lahav from <a href="https://www.hackeru.co.il/" target="_blank">"HackerU" College</a> -
                </span>
                
                <span>
